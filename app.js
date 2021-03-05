@@ -16,4 +16,5 @@ app.use((req, res, next) => {
   res.send('<h2>Hello from express</h2>');
 })
 
+// Create server and listen
 app.listen(3000)
