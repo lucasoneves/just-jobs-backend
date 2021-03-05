@@ -1,20 +1,15 @@
-const http = require('http');
 const express = require('express');
 
 const app = express();
 
-// Middleware
-app.use((req, res, next) => {
-  console.log('in the middleware')
-  // allows the request to continue to the next middleware
-  next() 
+app.use('/novo', (req, res, next) => {
+  console.log('add job')
+  res.send('<p>Adicionar Job</p>')
 })
 
-// Middleware
-app.use((req, res, next) => {
-  console.log('in another the middleware')
-  res.send('<h2>Hello from express</h2>');
+app.use('/', (req, res, next) => {
+  console.log('list jobs')
+  res.send('<p>Lista de jobs</p>')
 })
 
-// Create server and listen
 app.listen(3000)
