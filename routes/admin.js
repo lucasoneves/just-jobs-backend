@@ -1,17 +1,11 @@
 const express = require("express");
 
 const router = express.Router();
+const path = require('path');
+const rootDir = require('../helpers/path')
 // admin/novo >>> GET
 router.get("/novo", (req, res, next) => {
-  res.send(`
-  <p>Adicionar oferta de emprego</p>
-  <form method="POST" action="/admin/novo"><input type="text" placeholder="Nome da empresa" name="title" /><button>Salvar</button></form>
-  `);
-});
-
-router.post("/novo", (req, res, next) => {
-  console.log(res);
-  res.redirect("/");
+  res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
 });
 
 module.exports = router;
