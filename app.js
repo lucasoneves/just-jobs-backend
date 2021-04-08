@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const adminRoute = require('./routes/admin');
-const shopRoute = require('./routes/shop');
+const shopRoute = require('./routes/index');
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'assets')));
