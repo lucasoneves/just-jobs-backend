@@ -25,6 +25,12 @@ body {
   gap: 20px;
 }
 
+.main-header__item-list {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
 .main-header__item > a {
   text-decoration: none;
   color: #fff;
