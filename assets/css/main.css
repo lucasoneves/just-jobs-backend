@@ -44,6 +44,11 @@ body {
   margin: 20px 0;
 }
 
+.product-form {
+  display: flex;
+  gap: 20px;
+}
+
 button {
   background: none;
   border: 1px solid transparent;
