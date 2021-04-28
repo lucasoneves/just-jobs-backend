@@ -16,6 +16,12 @@ body {
   align-items: center;
 }
 
+.form-control {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
 .main-header__list {
   padding: 0;
   margin: 0;
@@ -64,4 +70,27 @@ input {
   height: 40px;
   border: 1px solid #CCC;
   border-radius: 3px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.grid img {
+  max-width: 180px;
+}
+
+.product-item {
+  box-shadow: 0 0 20px #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card__content {
+  padding: .8rem;
 }
